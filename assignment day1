@@ -1,0 +1,35 @@
+//Assignment1 : Array Operations
+
+let fruits = [];                          //Empty Array
+fruits.push("apple","banana","orange");
+console.log(fruits);    //adding data
+fruits.splice(0,1);                       //removing first fruit
+fruits.push("grape");                     //adding grape at end
+fruits.splice(1,1,"pear");                //updating 2nd fruit as pear
+console.log(fruits);                      //printing fruit array
+
+//Assignment2 : Object Operations
+
+let person = {
+
+    name: "john",
+    age: 30,
+    city: "New York",                     //Created object person with required details
+};
+delete person.age;                        //deleted age key
+person.job = "Engineer";                  //added job key with the value Engineer
+person.city = "San Francisco";            //updated city
+console.log(person);                      //printed person object
+
+//Assignment3 : Array of objects Operations
+
+let cars = [
+    {make: "Toyota",model: "carmy",year: 2018},    
+    {make: "Mahindra",model: "Thar",year: 2021},
+    {make: "Tata",model: "vista",year: 2010}
+];
+cars.splice(0,1);                                            //deleted 1st object
+//delete cars[0];
+cars.push({make: "Honda",model: "Civic",year: "2020"});     //added new object
+cars[1].model = "Accord";                                   //updated model as accord in 2nd object
+console.log(cars);                                          //printed cars array
